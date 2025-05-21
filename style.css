@@ -1,3 +1,8 @@
+@font-face{
+  font-family: "Exo-Black";
+  src: url("./fonts/Exo-Black.otf") format("opentype");
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -9,18 +14,78 @@ body{
   grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 4fr;
   height: 100vh;
+  font-family: Exo-Black, sans-serif;
 
 }
 
 .sidebar{
+  color: white;
   display: grid;
   background-color: rgb(61, 126, 210);
   grid-row: 1/6;
+  grid-template-rows: 100px 250px 150px;
+  
+}
+
+.sidebar > div{
+  display: grid;
+  margin-left: 20px;
+}
+
+.dashboard-logo{
+  font-size: 30px;
+  align-self: center;
+}
+
+.nav{
+  margin-bottom: 40px;
+}
+
+
+.nav .options > div{
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 40px 1fr;
 }
 
 .header{
   display: grid;
   grid-column: 2/6;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+.h-top{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 2fr 1fr;
+  margin: 10px;
+}
+
+
+img{
+  object-fit: contain;
+  width: 40px;
+}
+
+.search-icon{
+  object-fit: contain;
+}
+
+.search-bar{
+
+}
+
+input{
+  border: none;
+  outline: none;
+  background-color: rgb(232, 232, 240);
+  padding: 10px;
+  border-radius: 20%;
 }
 
 .content{
