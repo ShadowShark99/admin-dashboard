@@ -134,8 +134,54 @@ input{
 }
 
 .content{
+  padding-top: 20px;
   display: grid;
   grid-column: 2/6;
   grid-row: 2/6;
   background-color: rgb(232, 232, 240);
+  grid-template-columns: 1fr 250px;
+}
+
+.projects{
+  
+  display: grid;
+  margin-left: 10px;
+  grid-template-rows: 20px repeat(3, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project-header{
+  display: grid;
+  grid-column: 1 / -1;
+  align-items: end;
+}
+
+.project{
+  display: grid;
+  border-left-color: rgb(173, 142, 4);
+  border-left-style: solid;
+  border-left-width: 10px;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  grid-template-rows: 20px 1fr 20px;
+}
+
+.project > div + div{
+  color: gray
+}
+
+.buttons{
+  margin-left: 200px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.alerts{
+  display: grid;
+  grid-template-rows: 20px 1fr 20px 1fr;
 }
