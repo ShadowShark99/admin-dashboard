@@ -185,3 +185,62 @@ input{
   display: grid;
   grid-template-rows: 20px 1fr 20px 1fr;
 }
+
+.announcements{
+  font-size: .75em;
+  margin: 20px;
+  display: grid;
+  background-color: white;
+  border-radius: 20px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcement{
+  margin: 20px;
+  margin-bottom:0px;
+  margin-top: 10px;
+  display:grid;
+  grid-template-rows: 15px 1fr;
+}
+
+.announcement > div + div{
+  color: gray;
+}
+
+.people{
+  display:grid;
+  grid-template-rows: repeat(4, 1fr);
+  background-color: white;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+
+
+.person-info{
+  margin: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+}
+
+.person-info2{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.person-tag{
+  font-size: .75em;
+}
+
+.person-description{
+  color:gray;
+  font-size: .75em;
+}
+
+.alerts > div{
+  margin: 20px;
+}
